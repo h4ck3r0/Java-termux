@@ -1,0 +1,7 @@
+JAVA_VERSION="1.8.0_333"
+OS_NAME="Linux"
+OS_VERSION="2.6"
+OS_ARCH="aarch64"
+SUN_ARCH_ABI="gnu"
+SOURCE=" .:2244278f2496+"
+BUILD_TYPE="commercial"
