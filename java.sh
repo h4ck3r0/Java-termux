@@ -1,5 +1,6 @@
 #!/$PREFIX/bin/sh
 pkg install unzip
+clear
 echo '
 
        ██  █████  ██    ██  █████  
@@ -7,8 +8,8 @@ echo '
        ██ ███████ ██    ██ ███████ 
   ██   ██ ██   ██  ██  ██  ██   ██ 
    █████  ██   ██   ████   ██   ██ 
-       github.com/h4ck3r0/Java-termux 
-                             Openjdk8
+     github.com/h4ck3r0/Java-termux 
+                           Openjdk8
          
   ' | lolcat
 
@@ -27,5 +28,7 @@ export LD_LIBRARY_PATH="\$LIB_DIR"
 exec proot -0 \$JAVA_HOME/bin/java "\$@"
 
 EOL
-
-chmod +x $PREFIX/bin/java
+cd $PREFIX/bin/
+chmod +x * 
+cd $PREFIX/share/jdk8/bin
+chmod +x * 
