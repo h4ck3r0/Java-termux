@@ -51,8 +51,8 @@
 ```
 ## Credits
 
-*[Ghost](https://github.com/ghost)
-*[Xerrify](https://github.com/xeffyr)
+* [Ghost](https://github.com/ghost)
+* [Xerrify](https://github.com/xeffyr)
 
 ## CONNECT WITH US :
 
