@@ -1,4 +1,5 @@
-#!$PREFIX/bin/sh
+#!/$PREFIX/bin/sh
+pkg install unzip
 echo '
 
        ██  █████  ██    ██  █████  
@@ -14,7 +15,8 @@ echo '
                                
 cd $HOME/Java-termux
 cp -r jdk8 $PREFIX/share/
-
+cd $PREFIX/share/jdk8/jre/lib/
+unzip rt.zip
 cat << 'EOL' >> $PREFIX/bin/java
 
 #!/usr/bin/bash
