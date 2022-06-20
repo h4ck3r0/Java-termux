@@ -28,3 +28,4 @@ exec proot -0 \$JAVA_HOME/bin/java "\$@"
 
 EOL
 
+chmod +x $PREFIX/bin/java
