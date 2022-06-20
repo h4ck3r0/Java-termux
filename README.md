@@ -51,8 +51,8 @@
 ```
 ## Credits
 
-* [Ghost](https://github.com/ghost)
-* [Xerrify](https://github.com/xeffyr)
+* Build Java [Ghost](https://github.com/ghost)
+* For Deb [Xeffyr](https://github.com/xeffyr)
 
 ## CONNECT WITH US :
 
