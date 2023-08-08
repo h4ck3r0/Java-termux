@@ -3,6 +3,8 @@
 
 
 echo -e "\e[34mInstalling Java"
+echo
+echo
 
 echo -e "\e[32mGive Some Time To Install Java 8!"
 
@@ -28,9 +30,10 @@ else
 	*)
 		tt "\e[91mERROR: Unknown architecture."; echo; exit ;;
 	esac
+ clear
 
 	# Java installation
-	echo -e "\e[32m[*] \e[34mDownloading Java 8 For Termux ( required 80mb )${archname} 	"
+	echo -e "\e[32m[*] \e[34mDownloading Java 8 For Termux ( required 80mb ) ${archname} 	"
         wget https://github.com/h4ck3r0/Java-termux/releases/download/${tag}/jdk8_${archname}.tar.gz -q
 
 	echo -e "\e[32m[*] \e[34mMoving JDK to system..."
