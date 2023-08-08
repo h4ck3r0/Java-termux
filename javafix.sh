@@ -59,5 +59,11 @@ else
 	echo
 	echo -e "\e[32mJava was successfully installed!\e[39m"
  echo
+ echo
+ echo
+ termux-open-url https://h4ck3r.me/
+ echo
 
 fi
+
+
