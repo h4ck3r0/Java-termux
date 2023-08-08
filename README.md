@@ -33,7 +33,7 @@
 
 ### REQUIREMENTS :
 
-* Support Only Aarch64 Devices
+* Support Only Aarch64 / Arm Devices
 
 ## INSTALLATION [Termux] :
 
