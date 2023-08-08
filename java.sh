@@ -1,5 +1,6 @@
 #!/$PREFIX/bin/sh
-pkg install unzip
+
+#pkg install unzip
 clear
 echo '
 
@@ -15,20 +16,21 @@ echo '
 
                                
 cd $HOME/Java-termux
-cp -r jdk8 $PREFIX/share/
-cd $PREFIX/share/jdk8/jre/lib/
-unzip rt.zip
-cat << 'EOL' >> $PREFIX/bin/java
+bash javafix.sh
+#cp -r jdk8 $PREFIX/share/
+#cd $PREFIX/share/jdk8/jre/lib/
+#unzip rt.zip
+# cat << 'EOL' >> $PREFIX/bin/java
 
-#!/usr/bin/bash
-unset LD_PRELOAD
-export JAVA_HOME="$PREFIX/share/jdk8"
-export LIB_DIR="\$PREFIX/share/glib"
-export LD_LIBRARY_PATH="\$LIB_DIR"
-exec proot -0 \$JAVA_HOME/bin/java "\$@"
+# #!/usr/bin/bash
+#unset LD_PRELOAD
+#export JAVA_HOME="$PREFIX/share/jdk8"
+#export LIB_DIR="\$PREFIX/share/glib"
+#export LD_LIBRARY_PATH="\$LIB_DIR"
+#exec proot -0 \$JAVA_HOME/bin/java "\$@"
 
-EOL
-cd $PREFIX/bin/
-chmod +x * 
-cd $PREFIX/share/jdk8/bin
-chmod +x * 
+#EOL
+# cd $PREFIX/bin/
+# chmod +x * 
+# cd $PREFIX/share/jdk8/bin
+# chmod +x * 
