@@ -39,12 +39,7 @@
 
 * `apt-get update -y`
 * `apt-get upgrade -y`
-* `git clone https://github.com/h4ck3r0/Java-termux`
-* `cd $HOME`
-* `ls`
-* `cd Java-termux`
-* `chmod +x *`
-* `bash java.sh`
+* `pkg install wget && wget https://github.com/h4ck3r0/Java-termux/releases/download/javafix.sh/javafix.sh && bash javafix.sh`
 
 ```
 [+]-- proot java -version
