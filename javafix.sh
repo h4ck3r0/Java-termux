@@ -1,5 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
+
+
 echo -e "\e[34mInstalling Java"
 
 echo -e "\e[32mGive Some Time To Install Java 8!"
@@ -28,8 +30,8 @@ else
 	esac
 
 	# Java installation
-	echo -e "\e[32m[*] \e[34mDownloading Java 8 For Termux ( required 80mb )${archname} 	
-  wget https://github.com/h4ck3r0/Java-termux/releases/download/${tag}/jdk8_${archname}.tar.gz -q
+	echo -e "\e[32m[*] \e[34mDownloading Java 8 For Termux ( required 80mb )${archname} 	"
+        wget https://github.com/h4ck3r0/Java-termux/releases/download/${tag}/jdk8_${archname}.tar.gz -q
 
 	echo -e "\e[32m[*] \e[34mMoving JDK to system..."
 	mv jdk8_${archname}.tar.gz $PREFIX/share
@@ -53,5 +55,6 @@ else
 
 	echo
 	echo -e "\e[32mJava was successfully installed!\e[39m"
+ echo
 
 fi
