@@ -11,7 +11,7 @@ echo -e "\e[32mGive Some Time To Install Java 8!"
 #Checking for existing Java installation
 if [ -e $PREFIX/bin/java ]
 then
-	tt "\e[32mJava is already installed!"
+	echo -e "\e[32mJava is already installed!"
 	echo
 	exit
 else
