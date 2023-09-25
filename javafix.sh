@@ -15,7 +15,7 @@ then
 	echo
 	exit
 else
-	#Checking, whether is someone trying to cheat and simplyfy their installation it on Linux (i.e. x86 (not listad, as you can see) machine) using this script, which have no reason to work.
+	
 	case `dpkg --print-architecture` in
 	aarch64)
 		archname="aarch64"; tag="java_aarch" ;;
